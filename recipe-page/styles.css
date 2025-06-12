@@ -1,0 +1,236 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  width: 100%;
+  height: 100%;
+  color: hsl(24, 5%, 18%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  /* max-width: 375px; */
+  border-radius: 1.5rem;
+}
+.img-omelette {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.h1-title {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 1rem;
+}
+.p-about {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 1rem;
+  word-spacing: 2px;
+  color: hsl(30, 10%, 34%);
+}
+
+/* Preparation time */
+h3 {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+.prep-time ul {
+  list-style-position: inside;
+  list-style-type: disc;
+  margin-left: 2rem;
+  word-wrap: break-word;
+  margin-bottom: 1rem;
+}
+.prep-time li {
+  margin-bottom: 1rem;
+  color: hsl(30, 10%, 34%);
+}
+.prep-time {
+  width: 85%;
+  height: 170px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.prep-ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+/* Ingredients */
+.ingredients {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.ingredients h2 {
+  font-family: 'Young Serif', serif;
+  color: hsl(14, 45%, 36%);
+  font-weight: 400;
+  font-size: 25px;
+}
+.ingredients ul {
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  word-wrap: break-word;
+}
+.ingredients li {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 1rem;
+}
+.ing-ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+hr.solid {
+  border-top: 0.2px solid hsl(30, 54%, 90%);
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* Instructions */
+.instructions {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.instructions h2 {
+  margin-top: 1.5rem;
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+.instructions ol {
+  margin-left: 2rem;
+  margin-right: 1.5rem;
+  word-wrap: break-word;
+  margin-top: 1.2rem;
+}
+.instructions li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  word-spacing: 1px;
+  color: hsl(30, 10%, 34%);
+}
+
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+/* Nutrition */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.no-border {
+  border-bottom: none;
+}
+td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+.nutrition {
+  margin-left: 2rem;
+  margin-right: 1.5rem;
+}
+.nutrition h2 {
+  font-family: 'Young Serif', serif;
+  color: hsl(14, 45%, 36%);
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+.nutrition p {
+  color: hsl(30, 10%, 34%);
+  margin-top: 1rem;
+  word-spacing: 0.3rem;
+}
+.grey {
+  color: hsl(30, 10%, 34%);
+}
+.brown {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  .container {
+    max-width: 740px;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .img-omelette {
+    border-radius: 20px;
+  }
+  .h1-title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .p-about {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    word-spacing: 0;
+  }
+  .prep-time {
+    margin-left: 1rem;
+    width: 95%;
+  }
+  .ingredients {
+    margin-left: 1rem;
+  }
+  .instructions {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+  }
+  .instructions li {
+    word-spacing: 0;
+  }
+  hr.solid {
+    margin-left: 1rem;
+  }
+  .nutrition {
+    margin-left: 1rem;
+  }
+  .nutrition p {
+    word-spacing: 0;
+  }
+}
