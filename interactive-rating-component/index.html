@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="rating-container">
+        <img src="/images/icon-star.svg" alt="star-icon" />
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <form novalidate>
+          <fieldset>
+            <div class="rating">
+              <input type="radio" name="radio" id="radio1" value="1" />
+              <label class="rating-label" for="radio1">1</label>
+            </div>
+            <div class="rating">
+              <input type="radio" name="radio" id="radio2" value="2" />
+              <label class="rating-label" for="radio2">2</label>
+            </div>
+            <div class="rating">
+              <input type="radio" name="radio" id="radio3" value="3" />
+              <label class="rating-label" for="radio3">3</label>
+            </div>
+            <div class="rating">
+              <input type="radio" name="radio" id="radio4" value="4" />
+              <label class="rating-label" for="radio4">4</label>
+            </div>
+            <div class="rating">
+              <input type="radio" name="radio" id="radio5" value="5" />
+              <label class="rating-label" for="radio5">5</label>
+            </div>
+          </fieldset>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </section>
+      <section class="thank-you-container hidden">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="thank-you-illustration"
+        />
+        <p>You selected <span id="rate"></span> out of 5</p>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/SubagaS" target="_blank">Subaga Sreepathy</a>.
+    </div>
+    <script src="/scripts/scripts.js"></script>
+  </body>
+</html>
