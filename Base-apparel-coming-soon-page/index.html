@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <img src="./images/logo.svg" alt="logo-img" class="logo-img" />
+      <img
+        src="./images/hero-mobile.jpg"
+        alt="hero-mobile-img"
+        class="hero-mobile-img"
+      />
+      <img
+        src="./images/hero-desktop.jpg"
+        alt="hero-desktop-img"
+        class="hero-desktop-img"
+      />
+
+      <section class="coming-soon-container">
+        <h1>We're</h1>
+        <h1>coming soon</h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <div class="email-container">
+          <form novalidate>
+            <input
+              type="email"
+              placeholder="Email-address"
+              id="email"
+              name="Email-address"
+            />
+            <div class="error-container hidden">
+              <img
+                src="./images/icon-error.svg"
+                alt="error-icon"
+                class="error-icon"
+              />
+              <p class="error-message">Please provide a valid email</p>
+            </div>
+            <div class="success-container hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="success-icon"
+              >
+                <path
+                  fill="green"
+                  d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                />
+              </svg>
+              <p class="success-message">
+                Thank you for subscribing! We'll keep you posted.
+              </p>
+            </div>
+
+            <button type="submit" class="arrow-submit">
+              <img src="./images/icon-arrow.svg" alt="arrow-icon" />
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/SubagaS" target="_blank">Subaga Sreepathy</a
+        >.
+      </p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
