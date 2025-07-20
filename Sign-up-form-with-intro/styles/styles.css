@@ -1,0 +1,219 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+:root {
+  --red-400: hsl(0, 100%, 74%);
+  --green-400: hsl(154, 59%, 51%);
+  --green-300: hsl(154, 65%, 68%);
+  --purple-700: hsl(248, 32%, 49%);
+  --gray-900: hsl(249, 10%, 26%);
+  --purple-350: hsl(246, 25%, 77%);
+  --light-grey: rgb(222, 222, 222);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/bg-intro-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--red-400);
+  padding: 0 1.5rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 33.75rem;
+}
+
+.info-text-container {
+  text-align: center;
+  color: white;
+  margin-top: 5.5rem;
+  margin-bottom: 4rem;
+  h2 {
+    font-size: 1.75rem;
+    line-height: 130%;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 165%;
+    font-weight: 400;
+  }
+}
+
+.subcription-p-container {
+  background-color: var(--purple-700);
+  padding: 1.1rem 4.1875rem;
+  border-radius: 0.625rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+
+  p {
+    font-size: 0.9rem;
+    line-height: 175%;
+    text-align: center;
+    color: white;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+  gap: 1rem;
+
+  .input-container {
+    position: relative;
+    width: 100%;
+    input {
+      width: 100%;
+      height: 3.5rem;
+      border-radius: 0.3rem;
+      padding: 1rem 1.5rem;
+      font-family: inherit;
+      border: solid var(--light-grey) 1.6px;
+      font-size: 0.9rem;
+    }
+  }
+  .error-container {
+    .error-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .error-message {
+      position: absolute;
+      right: 0;
+      text-align: right;
+      font-style: italic;
+      color: var(--red-400);
+      margin-top: 0.1rem;
+      font-weight: 500;
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--green-400);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem 2rem;
+    font: inherit;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 -4px 0 rgba(0, 0, 0, 9%) inset;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: var(--green-300);
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--purple-350);
+    line-height: 190%;
+
+    strong {
+      color: var(--red-400);
+    }
+  }
+}
+
+.success-container {
+  background-color: white;
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  svg {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: green;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 0.8rem;
+  }
+}
+.hidden {
+  display: none;
+}
+.attribution {
+  margin: 1rem 0;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 40.625rem) {
+  body {
+    background-image: url('../images/bg-intro-desktop.png');
+    background-size: cover;
+  }
+
+  .info-text-container {
+    h2 {
+      font-size: 3.125rem;
+      line-height: 110%;
+    }
+  }
+  form {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+@media screen and (min-width: 59.375rem) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 69.56rem;
+    gap: 3rem;
+  }
+  .info-text-container {
+    text-align: left;
+    margin: 0;
+    max-width: 32.81rem;
+  }
+  form {
+    min-width: 33.75rem;
+  }
+  .attribution {
+    margin: 2rem 0;
+  }
+}
