@@ -1,0 +1,237 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-size: 20px;
+  font-family: 'Libre Franklin';
+}
+
+:root {
+  --blue-500: hsl(223, 87%, 63%);
+  --blue-200: hsl(223, 100%, 88%);
+  --red-400: hsl(354, 100%, 66%);
+  --gray-400: hsl(0, 0%, 59%);
+  --blue-950: hsl(209, 33%, 12%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 16rem;
+  margin-top: 4.25rem;
+}
+
+.ping-logo {
+  width: 2.65rem;
+  height: 0.75rem;
+}
+
+.text-info-container {
+  margin: 2rem 0;
+  text-align: center;
+  line-height: 125%;
+
+  p:first-child {
+    font-size: 1rem;
+    color: var(--gray-400);
+    strong {
+      color: var(--blue-950);
+    }
+  }
+  p:last-child {
+    font-size: 0.6rem;
+  }
+}
+.form-container {
+  width: 90%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+  .input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    input {
+      width: 100%;
+      height: 2rem;
+      padding: 0 1.2rem;
+      border: solid 2px var(--blue-200);
+      border-radius: 1.4rem;
+      font-family: inherit;
+      caret-color: var(--blue-200);
+      outline: none;
+
+      &::placeholder {
+        color: var(--blue-200);
+      }
+      &:focus {
+        border: solid 2px var(--blue-500);
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 2rem;
+    border-radius: 1.4rem;
+    background-color: var(--blue-500);
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 5px 10px hsla(223, 87%, 63%, 23%);
+
+    &:hover {
+      background-color: hsla(223, 87%, 63%, 75%);
+      cursor: pointer;
+    }
+  }
+}
+
+.empty-error,
+.invalid-email-error {
+  font-size: 0.55rem;
+  text-align: left;
+  color: var(--red-400);
+}
+
+.success-message {
+  font-size: 0.55rem;
+  text-align: left;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.illustration-dashboard {
+  width: 100%;
+  height: 9.6rem;
+  margin-top: 3.6rem;
+}
+
+footer {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-container {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.links {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: solid 2px var(--blue-200);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    color: var(--blue-500);
+  }
+  &:hover {
+    background-color: var(--blue-500);
+    border: solid 2px var(--blue-500);
+    cursor: pointer;
+    i {
+      color: white;
+    }
+  }
+}
+
+.copyright-p {
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  line-height: 125%;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 32.5rem) {
+  .main-container {
+    max-width: 35.6rem;
+  }
+  .ping-logo {
+    width: 4.25rem;
+    height: 1.2rem;
+  }
+  .text-info-container {
+    margin-top: 2.4rem;
+    margin-bottom: 2rem;
+    p:first-child {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+    p:last-child {
+      font-size: 1rem;
+    }
+  }
+  .form-container {
+    form {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+    .input-container {
+      width: 100%;
+      align-items: flex-start;
+      input {
+        height: 2.8rem;
+      }
+    }
+
+    button {
+      width: 40%;
+      height: 2.8rem;
+    }
+  }
+
+  .empty-error,
+  .invalid-email-error,
+  .success-message {
+    margin-left: 0.5rem;
+  }
+
+  .illustration-dashboard {
+    height: 19rem;
+    width: 90%;
+  }
+  footer {
+    margin-top: 3.6rem;
+  }
+}
