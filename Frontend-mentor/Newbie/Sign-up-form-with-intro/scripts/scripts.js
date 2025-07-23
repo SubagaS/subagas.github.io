@@ -34,7 +34,7 @@ function createErrorContainer(placeholder) {
 
   const image = document.createElement('img');
   image.className = 'error-icon';
-  image.src = '../images/icon-error.svg';
+  image.src = './images/icon-error.svg';
 
   div.appendChild(p);
   div.appendChild(image);
