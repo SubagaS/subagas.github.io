@@ -1,11 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="intro-container">
+        <p>
+          <span>Hi! I'm Subaga Sreepathy, </span>a creative front-end developer
+          with a background in graphic design and a strong foundation in
+          <strong>UI/UX</strong>. I enjoy building clean, interactive web
+          experiences using <strong>HTML, CSS, and JavaScript.</strong> My
+          design roots help me bring both aesthetics and usability into every
+          project I work on.
+        </p>
+        <p></p>
+      </div>
+      <div class="filter-container">
+        <div class="all-container">
+          <input type="radio" id="all" name="filter" />
+          <label for="all">All</label>
+        </div>
+        <div class="html-css-container">
+          <input type="radio" id="html-css" name="filter" />
+          <label for="html-css">HTML/CSS</label>
+        </div>
+        <div class="js-container">
+          <input type="radio" id="js" name="filter" />
+          <label for="js">JavaScript</label>
+        </div>
+      </div>
+
+      <div class="project-card-container">
+        <div class="card-container">
+          <img src="./images/recipe-page.jpg" alt="recipe-page" />
+          <h3>Recipe page</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/recipe-page/"
+              target="_blank"
+              ><button type="button">Live site</button>
+            </a>
+
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/recipe-page"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/social-links-profile.jpg"
+            alt="social-links-profile"
+          />
+          <h3>Social links profile</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/social-links-profile/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/social-links-profile"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img src="./images/blog-preview-card.jpg" alt="blog-preview-card" />
+          <h3>Blog preview card</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/blog-preview-card/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/blog-preview-card"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/results-summary-component.jpg"
+            alt="results-summary-component"
+          />
+          <h3>Results summary component</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/results-summary-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/results-summary-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/product-preview-card-component.jpg"
+            alt="product-preview-card-component"
+          />
+          <h3>Product preview card component</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/product-preview-card-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/product-preview-card-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img src="./images/qr-code-component.jpg" alt="qr-card-component" />
+          <h3>Qr code component</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/qr-code-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/qr-code-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img src="./images/nft-preview-card.jpg" alt="nft-preview-card" />
+          <h3>NFT preview card</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/nft-preview-card-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/nft-preview-card-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/order-summary-component.jpg"
+            alt="order-summary-component"
+          />
+          <h3>Order summary component</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/order-summary-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/order-summary-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img src="./images/stats-preview-card.jpg" alt="stats-preview-card" />
+          <h3>Stats preview card component</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/stats-preview-card-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/stats-preview-card-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/3-column-preview card.jpg"
+            alt="3-column-preview-card"
+          />
+          <h3>3 column preview card</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/3-column-preview-card-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/3-column-preview-card-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/profile-card-component.jpg"
+            alt="profile-card-component"
+          />
+          <h3>Profile card component</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/profile-card-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/profile-card-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/social-proof-section.jpg"
+            alt="social-proof-section"
+          />
+          <h3>Social proof section</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/social-proof-section-master/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/social-proof-section-master"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/four-card-feature-section.jpg"
+            alt="four-card-feature-section"
+          />
+          <h3>Four card feature section</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/four-card-feature-section-master/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/four-card-feature-section-master"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/huddle-landing-page.jpg"
+            alt="huddle-landing-page"
+          />
+          <h3>Huddle landing page</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/huddle-landing-page-with-single-introductory-section/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Frontend-Mentor/tree/main/huddle-landing-page-with-single-introductory-section"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img src="./images/faq-accordion-page.jpg" alt="faq-accordion-page" />
+          <h3>FAQ accordion page</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/faq-accordion/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a href="https://github.com/SubagaS/FAQ-accordion" target="_blank">
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/interactive-rating-component.jpg"
+            alt="interactive-rating-component"
+          />
+          <h3>Interactive rating component</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/interactive-rating-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Interactive-rating-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/article-preview-component.jpg"
+            alt="article-preview-component"
+          />
+          <h3>Article preview component</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/article-preview-component/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Article-preview-component"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/base-apparel-coming-soon-page.jpg"
+            alt="base-apparel-coming-soon-page"
+          />
+          <h3>Base apparel coming soon page</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/Base-apparel-coming-soon-page/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Base-apparel-coming-soon-page"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/sign-up-form-with-intro.jpg"
+            alt="sign-up-form-with-intro"
+          />
+          <h3>Sign up form with intro</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/Sign-up-form-with-intro/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Sign-up-form-with-intro"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/ping-coming-soon-page.jpg"
+            alt="ping-coming-soon-page"
+          />
+          <h3>Ping coming soon page</h3>
+          <ul class="lang-container">
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <div class="btn-container">
+            <a
+              href="https://subagas.github.io/Frontend-mentor/Newbie/Ping-coming-soon-page/"
+              target="_blank"
+            >
+              <button type="button">Live site</button>
+            </a>
+            <a
+              href="https://github.com/SubagaS/Ping-coming-soon-page"
+              target="_blank"
+            >
+              <button type="button">Source code</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
